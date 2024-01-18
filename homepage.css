@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(images/fotos.png);
+    height: 9000px;
+    background-size: contain;
+}
+
+.container {
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-main-nav-wrapper {
+    background-color: #fff;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-main-nav-wrapper nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-main-nav-wrapper nav a {
+    color: #000;
+    font-family: Old Standard TT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 20px;
+    transition: all .3s linear;
+    text-decoration: none;
+}
+
+.header-main-nav-wrapper nav a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.header-main-nav-wrapper nav a img {
+    object-fit: contain;
+    aspect-ratio: 1;
+    width: 80px;
+}
+
+.order-wrapper-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-wrapper .card {
+    border-radius: 20px;
+    background-color: #392E2D;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    margin: 20px;
+}
+
+.broodjes-button {
+    border-radius: 999px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff0000;
+    margin-top: 40px;
+    border: none;
+    transition: all .3s linear;
+    border: 2px solid #ff0000;
+    cursor: pointer;
+}
+
+.broodjes-button:hover {
+    border: 2px solid white;
+    background-color: #ff5a5a;
+}
+
+.order-wrapper .card h3 {
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.broodjes-text {
+    color: #fff;
+}
+
+.main-nav,
+.main-imageslider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.inleiding a {
+    color: green;
+}
+
+.inleiding h2 {
+    color: blueviolet;
+}
