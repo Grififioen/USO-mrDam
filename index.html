@@ -58,38 +58,49 @@
 
     <div class="order-wrapper">
         <div class="container order-wrapper-row">
+            <!-- broodje 1 -->
             <div class="card">
                 <img src="broodjes afbeelding" alt="">
 
                 <h3>Broodje met vlees</h3>
                 <p class="broodjes-text">Kies welk brooje vlees je wil in de popup</p>
 
-                <button class="broodjes-button">
+                <button class="broodjes-button" onclick="openModal('vlees')">
                     Kies broodje
                 </button>
-
             </div>
+            <!-- broodje 2 -->
             <div class="card">
                 <img src="broodjes afbeelding" alt="">
 
                 <h3>Broodje met groenten</h3>
                 <p class="broodjes-text">Kies welk brooje Groenten je wil in de popup</p>
 
-                <button class="broodjes-button">
+                <button class="broodjes-button" onclick="openModal('groenten')">
                     Kies broodje
                 </button>
 
             </div>
+            <!-- broodje 3 -->
             <div class="card">
                 <img src="broodjes afbeelding" alt="">
 
                 <h3>Broodje met kaas</h3>
                 <p class="broodjes-text">Kies welk brooje kaas je wil in de popup</p>
 
-                <button class="broodjes-button">
+                <button class="broodjes-button" onclick="openModal('kaas')">
                     Kies broodje
                 </button>
+            </div>
+            <!-- modals -->
 
+            <div id="overlay"></div>
+
+            <div id="modal">
+                <span id="close-btn" onclick="closeModal()">X</span>
+                <p> Er is geen keus; Je krijgt bal gehakt</p>
+                <input type="number" id="nummerPicker" onchange="changeAmount(event)" />
+                <button class="broodjes-button" id="bestelButton"></button>
             </div>
         </div>
 
