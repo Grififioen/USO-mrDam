@@ -14,6 +14,8 @@ body {
     padding-top: 20px;
     max-width: 1000px;
     margin: auto;
+    text-align: center;
+    line-height: 35px;
 }
 
 .header-main-nav-wrapper {
@@ -31,6 +33,76 @@ body {
     justify-content: space-around;
 }
 
+.main-button {
+    padding: 15px 30px;
+    width: 230px;
+    height: 500px;
+    border-radius: 999px;
+    background: #F80000;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.broodjesSlides {
+    display: none;
+}
+
+.prev:hover .next:hover {
+    background-color: #000;
+}
+
+.text {
+    color: #000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: center;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*in de code wordt deze keyframe aangeroepen om te faden  */
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* hieronder staat mr dammie  om het plaatje bij zijn naam te stylen */
+.about-mrdammie {
+    img {
+        width: 10%;
+        height: auto;
+        border-radius: 999px;
+    }
+}
+
+/* hieronder heb ik de nav gewrapt zodat het allemaal netjes op orde blijft */
 .header-main-nav-wrapper nav a {
     color: #000;
     font-family: Old Standard TT;
@@ -43,12 +115,14 @@ body {
     text-decoration: none;
 }
 
+/* hier heb ik de interactie gemaakt dat wanneer je overheen de tekst in de header gaat met de muis de tekst scaled. ook staat hier nog een beetje styling van de tekst bij. */
 .header-main-nav-wrapper nav a:hover {
     transform: scale(1.1);
     opacity: 0.9;
     text-decoration: underline;
 }
 
+/* logo styling */
 .header-main-nav-wrapper nav a img {
     object-fit: contain;
     aspect-ratio: 1;
@@ -60,6 +134,7 @@ body {
     justify-content: space-between;
 }
 
+/*styling van de box waar de het broodje met op staat */
 .order-wrapper .card {
     border-radius: 20px;
     background-color: #392E2D;
@@ -71,6 +146,7 @@ body {
     margin: 20px;
 }
 
+/* styling broodjes button voor kies broodje met interactie */
 .broodjes-button {
     border-radius: 999px;
     padding: 10px 20px;
@@ -83,6 +159,7 @@ body {
     cursor: pointer;
 }
 
+/* styling interactie */
 .broodjes-button:hover {
     border: 2px solid white;
     background-color: #ff5a5a;
@@ -97,6 +174,7 @@ body {
     color: #fff;
 }
 
+/* positie van de pop up met styling van de achtergrond */
 #overlay {
     display: none;
     position: fixed;
@@ -120,6 +198,7 @@ body {
     z-index: 100;
 }
 
+/* styling van button als je weg wilt klikken */
 #close-btn {
     cursor: pointer;
     font-size: 20px;
@@ -129,8 +208,10 @@ body {
     right: 10px;
 }
 
+/* main nav styling en locatie */
 .main-nav,
 .main-imageslider {
+    height: 440px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,5 +226,5 @@ body {
 }
 
 .inleiding h2 {
-    color: blueviolet;
+    color:
 }
