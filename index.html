@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="homepage.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>banh mi</title>
 </head>
 <!---in de body heb ik direct een divje gemaakt voor de header. ik heb hierin links gemaakt voor google.com als placeholder (voor het idee) ook heb ik een class gemaakt genaamd header-main-nav-wrapper waarmee ik de header style in css. ik gebruik de container class om de positie juist te zetten. -->
 
@@ -13,13 +13,13 @@
     <div class="header-main-nav-wrapper">
         <nav class="container">
             <a href="google.com">
-                <img src="images/mr dam logo.png">
+                <img src="images/mrdamlogo.png">
             </a>
-            <a href="google.com">Menu</a>
-            <a href="google.com">Gallery</a>
-            <a href="google.com">About</a>
-            <a href="google.com">Contact</a>
-            <a href="google.com">Werken bij</a>
+            <a href="#">Menu</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Werken bij</a>
         </nav>
     </div>
     <div>
@@ -36,29 +36,29 @@
                 <!-- hierin staat de info naar de class van de broodjes en naar de fade wat zorgt voor een vloeiende overgang   -->
                 <div class="broodjesSlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="images/banh mi .png" style="width:100%">
+                    <img src="images/banhmi.png" style="width:100%">
                     <div class="text">Banh Mi Pork Belly</div>
                 </div>
 
                 <div class="broodjesSlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="images/banh mi chicke n.png" style="width:100%">
+                    <img src="images/banhmichicken.png" style="width:100%">
                     <div class="text">Banh Mi Chicken</div>
                 </div>
 
                 <div class="broodjesSlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="images/banh mi_2.0 beef.png" style="width:100%">
+                    <img src="images/banhmi_2.0beef.png" style="width:100%">
                     <div class="text">Banh Mi Beef</div>
                 </div>
 
                 <!---->
             </div>
-            <a class="main-button">Bestel nu</a>
+            <a class="main-button" href="#onzeBroodjes">Bestel nu</a>
             <div class="main-imageslider">
-                <img src="images/banh mi .png" />
-                <img src="images/banh mi chicke n.png" />
-                <img src="images/banh mi_2.0 beef.png" />
+                <img src="images/banhmi.png" />
+                <img src="images/banhmichicken.png" />
+                <img src="images/banhmi_2.0beef.png" />
 
             </div>
         </section>
@@ -73,19 +73,17 @@
                 Vietnamese gerecht dat geliefd is en wordt herinnerd door de klanten met de oorspronkelijke naam "banh
                 mi".</p>
             <section class="about-mrdammie">
-                <img src="images/mr dam .jpeg" />
+                <img src="images/mrdam.jpeg" />
                 <p class="about-name">Mr.Dam</p>
                 <p class="about-occupation">Chef kok</p>
             </section>
         </section>
     </div>
 
-    <div class="order-wrapper">
+    <div id="onzeBroodjes" class="order-wrapper">
         <div class="container order-wrapper-row">
             <!-- broodje 1-->
             <div class="card">
-                <img src="broodjes afbeelding" alt="">
-
                 <h3>Broodje met vlees</h3>
                 <p class="broodjes-text">Kies wat voor broodje je wil in de popup</p>
 
@@ -95,8 +93,6 @@
             </div>
             <!-- broodje 2 -->
             <div class="card">
-                <img src="broodjes afbeelding" alt="">
-
                 <h3>Broodje met groenten</h3>
                 <p class="broodjes-text">Kies welk broodje Groenten je wil in de popup</p>
                 <!--button met 'on click' naar javascript gelinkt, eens de bezoeker klikt op de button groenten kaas of vlees als invulling,komt de pop up en wordt de tekst ingevuld met kaas of groenten of vlees-->
@@ -107,7 +103,6 @@
             </div>
             <!-- broodje 3 --> <!--class over card wat een pop -->
             <div class="card">
-                <img src="broodjes afbeelding" alt="">
 
                 <h3>Broodje met kaas</h3>
                 <p class="broodjes-text">Kies welk broodje kaas je wil in de popup</p>
@@ -119,14 +114,16 @@
             <!-- modals -->
 
             <div id="overlay"></div>
-            <!--hier heb ik op click dat je in de box met pijltjes meer of minder broodjes kan kiezern met 'nummerpicker en changeamount' zie JS hiervoor. verder een ironische tekst omdat ik in figma alleen broodje gehaktbal had staan. Is een grapje :)-->
+            <!--hier heb ik op click dat je in de box met pijltjes meer of minder broodjes kan kiezen met 'nummerpicker en changeamount' zie JS hiervoor. verder een ironische tekst omdat ik in figma alleen broodje gehaktbal had staan. Is een grapje :)-->
             <div id="modal">
                 <span id="close-btn" onclick="closeModal()">X</span>
                 <p> Er is geen keus; Je krijgt bal gehakt</p>
-                <input type="number" id="nummerPicker" onchange="changeAmount(event)" />
+                <p>Hoeveel broodjes wil je</p>
+                <input type="number" id="nummerPicker" oninput="changeAmount(event)" onchange="changeAmount(event)" />
                 <button class="broodjes-button" id="bestelButton"></button>
             </div>
         </div>
+
         <!--javascript link onderaan zodat alle informatie gelezen kan worden.-->
     </div>
     <script src="javascript.js"></script>

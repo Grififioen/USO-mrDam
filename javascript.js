@@ -10,7 +10,7 @@ function openModal(broodjesSoort) {
     document.querySelector('#bestelButton').innerHTML="bestel "+ amount + " " + soort + " broodje";
 
     document.querySelector('#overlay').style.display = 'block';
-    document.querySelector('#modal').style.display = 'block';
+    document.querySelector('#modal').style.display = 'flex';
 }
 
 //het sluiten van de popup

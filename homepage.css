@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background: url(images/fotos.png);
-    height: 9000px;
-    background-size: contain;
+    width: 100vw;
+    background-size: cover;
 }
 
 .container {
@@ -39,10 +40,6 @@ body {
     height: 500px;
     border-radius: 999px;
     background: #F80000;
-}
-
-* {
-    box-sizing: border-box
 }
 
 .slideshow-container {
@@ -94,12 +91,10 @@ body {
 }
 
 /* hieronder staat mr dammie  om het plaatje bij zijn naam te stylen */
-.about-mrdammie {
-    img {
-        width: 10%;
-        height: auto;
-        border-radius: 999px;
-    }
+.about-mrdammie img {
+    width: 10%;
+    height: auto;
+    border-radius: 999px;
 }
 
 /* hieronder heb ik de nav gewrapt zodat het allemaal netjes op orde blijft */
@@ -196,6 +191,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 100;
+    flex-direction: column;
 }
 
 /* styling van button als je weg wilt klikken */
@@ -226,5 +222,5 @@ body {
 }
 
 .inleiding h2 {
-    color:
+    color: #000;
 }
